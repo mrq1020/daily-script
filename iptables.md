@@ -8,6 +8,8 @@
 
 > **CREATE/UPDATE/DELETE**
 
+`iptables -I DOCKER-USER -s 10.91.21.18 -j ACCEPT`
+
 `iptables -A IN_public_allow -p TCP --dport 6379 -j ACCEPT`
 
 `iptables -R INPUT 2 -s 192.168.1.1 -p TCP --dport 22 -j DROP`
@@ -22,6 +24,10 @@
 
 `iptables-save > /etc/sysconfig/iptables`
 
+`cat /etc/sysconfig/iptables`
+
 `service iptbales save`
+
+`service iptables restart`
 
 `...`

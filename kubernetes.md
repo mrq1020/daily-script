@@ -14,6 +14,8 @@ ___
 
 `kubectl get pod -n $namespaces`
 
+`kubectl get service -n $namespaces`
+
 `kubectl logs -f $pod -n $namespaces`
 
 ___

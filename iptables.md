@@ -8,7 +8,7 @@
 
 > **CREATE/UPDATE/DELETE**
 
-`iptables -I DOCKER-USER -s 10.91.21.18 -j ACCEPT`
+`iptables -I DOCKER-USER -s 127.0.0.1 -j ACCEPT`
 
 `iptables -A IN_public_allow -p TCP --dport 6379 -j ACCEPT`
 
